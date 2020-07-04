@@ -1,28 +1,47 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app flat color="#072f24" dark>
+      <div class="d-flex align-center">
+        <v-img
+          alt="Angry Deer Logo"
+          class="shrink mr-2"
+          contain
+          src=""
+          transition="scale-transition"
+          width="40"
+        />
+
+        <v-img
+          alt="Angry Deer Name"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="100"
+          src=""
+          width="100"
+        />
+      </div>
+
+      <v-spacer></v-spacer>
+    </v-app-bar>
+
+    <v-content style="background:#095b46">
+      <HelloWorld />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
     HelloWorld
-  }
-}
-</script>
+  },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  data: () => ({
+    //
+  })
+};
+</script>
