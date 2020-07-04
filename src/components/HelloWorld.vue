@@ -12,7 +12,7 @@
 
       <v-col class="mb-4">
         <v-btn
-          href="angrydeersoftware@gmail.com"
+          href="mailto:angrydeersoftware@gmail.com"
           color="#00af72"
           dark
           depressed
